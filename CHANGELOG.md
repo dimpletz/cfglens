@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 - Unreleased
+## 0.1.0 - 2026-10-11
 
 ### Added
 - Deterministic structure-aware comparison for JSON, YAML, TOML, and `.env` files through a shared Python core.

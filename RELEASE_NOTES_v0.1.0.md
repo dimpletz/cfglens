@@ -1,4 +1,4 @@
-# CfgLens 0.1.0 (Release Draft)
+# CfgLens 0.1.0
 
 **Compare configurations, not just text.**
 
@@ -21,8 +21,8 @@ YAML mappings with non-string keys and duplicate mapping keys are rejected rathe
 
 Redaction is heuristic and does not guarantee detection when secrets are stored under unrelated keys. MCP can read files accessible to its operating-system user and is intended only for trusted local clients in this release. The Security Hardened README badge is descriptive and is not a certification.
 
-## Release Status
+## Installation
 
-This file is a release draft. CfgLens 0.1.0 has not been published. Cross-platform GitHub Actions results and the final repository/PyPI Trusted Publishing configuration must be confirmed before release.
+Install the CLI with `python -m pip install cfglens`. Install optional MCP support with `python -m pip install "cfglens[mcp]"`.
 
 Official author and maintainer: Ofelia B Webb.
