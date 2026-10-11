@@ -56,7 +56,8 @@ jobs:
           from pathlib import Path
 
           root = Path.cwd()
-          artifacts = sorted(Path("dist").glob("cfglens-0.1.0-*"))
+          artifacts = sorted(Path("dist").glob("cfglens-0.1.0-*.whl"))
+          artifacts += list(Path("dist").glob("cfglens-0.1.0.tar.gz"))
           assert len(artifacts) == 2, artifacts
           before = str(root / "examples" / "development.yaml")
           after = str(root / "examples" / "production.yaml")
