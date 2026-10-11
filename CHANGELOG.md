@@ -16,4 +16,4 @@
 ### Fixed
 - Parser errors no longer include raw source excerpts, and human terminal output escapes control characters.
 - MCP comparisons always use shared-core redaction and sanitized parsing.
-- Packaging metadata, cross-platform CI coverage, and OIDC-based PyPI release safeguards are prepared for review.
+- Cross-platform GitHub Actions validation passed and V0.1.0 was published to PyPI through Trusted Publishing with OIDC.

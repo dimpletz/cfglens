@@ -3,8 +3,8 @@
 
 <p align="center">
 	<a href="https://github.com/dimpletz/cfglens/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
-	<img src="https://img.shields.io/badge/Python-3.11%2B-blue.svg" alt="Python 3.11 and newer">
-	<a href="https://pypi.org/project/cfglens/"><img src="https://img.shields.io/badge/PyPI-cfglens%20(unpublished)-lightgrey.svg" alt="PyPI package cfglens: unpublished"></a>
+	<a href="https://pypi.org/project/cfglens/"><img src="https://img.shields.io/pypi/v/cfglens.svg" alt="PyPI version"></a>
+	<a href="https://pypi.org/project/cfglens/"><img src="https://img.shields.io/pypi/pyversions/cfglens.svg" alt="Supported Python versions"></a>
 	<img src="https://img.shields.io/badge/Security-Hardened-brightgreen.svg" alt="Security: Hardened">
 </p>
 
@@ -60,10 +60,10 @@ Typical uses include developers comparing application settings, DevOps engineers
 
 ## Installation
 
-CfgLens requires Python 3.11 or newer. The package is not yet published. After publication, install the CLI with:
+CfgLens requires Python 3.11 or newer. Install the published CLI with:
 
 ```bash
-python -m pip install cfglens
+python -m pip install cfglens==0.1.0
 ```
 
 From a local checkout, install the development tools with:
@@ -72,13 +72,13 @@ From a local checkout, install the development tools with:
 python -m pip install -e ".[dev]"
 ```
 
-MCP is optional. From a local checkout, install the MCP extra with:
+MCP is optional. Install the published MCP extra with:
 
 ```bash
-python -m pip install -e ".[mcp]"
+python -m pip install "cfglens[mcp]==0.1.0"
 ```
 
-After publication, the corresponding package install will be `python -m pip install "cfglens[mcp]"`.
+From a local checkout, the development MCP install is `python -m pip install -e ".[mcp]"`.
 
 ## Quick Start
 
@@ -211,20 +211,21 @@ Hypothesis and pytest-cov are included only in the `dev` extra, not in normal CL
 
 ## GitHub and PyPI Release Information
 
-The intended distribution name is `cfglens`; the package is not yet published on PyPI. The release workflow is configured to publish a GitHub release through PyPI Trusted Publishing. Before publication, configure the repository's PyPI trusted publisher and verify the distribution name is available.
+CfgLens `0.1.0` is published on [PyPI](https://pypi.org/project/cfglens/) and has a [GitHub release](https://github.com/dimpletz/cfglens/releases/tag/v0.1.0). Future releases use the release-only GitHub Actions workflow and PyPI Trusted Publishing with OIDC; no PyPI API token is used.
 
-The project repository is [github.com/dimpletz/cfglens](https://github.com/dimpletz/cfglens). The repository URL is configured in package metadata and the License badge links directly to its `main` branch `LICENSE` file. Confirm the repository is accessible before the initial push.
+The project repository is [github.com/dimpletz/cfglens](https://github.com/dimpletz/cfglens). The repository URL is configured in package metadata, and the License badge links directly to its `main` branch `LICENSE` file.
 
 ## Release Preparation
 
-- [Draft changelog](CHANGELOG.md)
-- [V0.1.0 release notes (draft)](RELEASE_NOTES_v0.1.0.md)
-- [First-release checklist and setup instructions](RELEASE_CHECKLIST.md)
+- [V0.1.0 changelog](CHANGELOG.md)
+- [V0.1.0 release notes](RELEASE_NOTES_v0.1.0.md)
+- [Release checklist and setup record](RELEASE_CHECKLIST.md)
 - [Phase 4 verification record](PHASE4_VERIFICATION.md)
+- [Phase 6C post-publication verification](PHASE6C_VERIFICATION.md)
 
 ## Verification Report
 
-Phase 4's README command outcomes are recorded in [PHASE4_VERIFICATION.md](PHASE4_VERIFICATION.md). Phase 5's CI, packaging, security, badge, and final README verification is recorded in [PHASE5_VERIFICATION.md](PHASE5_VERIFICATION.md).
+Phase 4's README command outcomes are recorded in [PHASE4_VERIFICATION.md](PHASE4_VERIFICATION.md), Phase 5 preparation in [PHASE5_VERIFICATION.md](PHASE5_VERIFICATION.md), and published package checks in [PHASE6C_VERIFICATION.md](PHASE6C_VERIFICATION.md).
 
 ## License
 

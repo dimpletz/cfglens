@@ -26,3 +26,5 @@ Redaction is heuristic and does not guarantee detection when secrets are stored 
 Install the CLI with `python -m pip install cfglens`. Install optional MCP support with `python -m pip install "cfglens[mcp]"`.
 
 Official author and maintainer: Ofelia B Webb.
+
+Released 2026-10-11: [GitHub Release](https://github.com/dimpletz/cfglens/releases/tag/v0.1.0) | [PyPI package](https://pypi.org/project/cfglens/).
