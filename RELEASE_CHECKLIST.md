@@ -12,8 +12,8 @@ This checklist prepares the first public release. No repository, tag, GitHub rel
 
 ## CI and Release Gate
 
-- [ ] Run the new CI workflow on GitHub and confirm all Ubuntu, Windows, and macOS jobs pass for Python 3.11, 3.12, 3.13, and 3.14. Local checks do not substitute for hosted matrix results.
-- [ ] Confirm coverage, full-repository Ruff, wheel/sdist build, Twine check, and installed wheel/sdist smoke steps pass.
+- [x] Run the new CI workflow on GitHub and confirm all Ubuntu, Windows, and macOS jobs pass for Python 3.11, 3.12, 3.13, and 3.14. [Successful hosted run](https://github.com/dimpletz/cfglens/actions/runs/38103792352); local checks do not substitute for hosted matrix results.
+- [x] Confirm coverage, full-repository Ruff, wheel/sdist build, Twine check, and installed wheel/sdist smoke steps pass in the successful hosted run.
 - [ ] Review the release workflow action commit SHAs and verify they still correspond to the intended reviewed releases when the release is prepared.
 - [ ] Confirm the release workflow is triggered only by a published GitHub release and rejects a tag that does not exactly match `v0.1.0` from project metadata.
 - [ ] Configure the GitHub `pypi` environment with required reviewers and deployment protection rules before enabling publication.
