@@ -1,0 +1,6 @@
+app:
+  name: storefront
+  port: 443
+  debug: false
+  password: SYNTHETIC_PRODUCTION_PASSWORD
+  retries: 3
